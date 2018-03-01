@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+int n=1,a[20],x,k=0;
+scanf("%d ",&x);
+while(scanf("%d",&a[k])!=EOF)
+{
+    if(a[k]==x)
+    {
+        printf("%d",k);
+        n=0;
+        break;
+     }
+       k++;
+}
+if(n==1)
+{
+    printf("-1");
+}
+}
