@@ -1,8 +1,7 @@
 #include<stdio.h>
-
 int main() {
-  int n=1,i,a[20],x,k=0;
-  scanf("%d",&x);
+int n=1,i,a[20],x,k=0;
+scanf("%d",&x);
 while(scanf("%d",&a[k]))
 {
     if(a[k]==x)
@@ -10,7 +9,7 @@ while(scanf("%d",&a[k]))
         printf("%d",k);
         n++;
         break;
-    }
+     }
     else
     {
        k++;
