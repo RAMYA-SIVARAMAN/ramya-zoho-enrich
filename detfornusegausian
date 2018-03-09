@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+   int n,i,j,k;
+   scanf("%d",&n);
+   float a[n][n],temp,d=1;
+   for(i=0; i<n; i++)
+   {
+      for(j=0; j<n; j++)
+      {
+         scanf("%f",&a[i][j]);
+      }
+   }
+
+   for(i=0; i<n; i++)
+   {
+      for(j=0; j<n; j++)
+      {
+         if(i<j)
+         {
+            temp=a[j][i]/a[i][i];
+            for(k=0; k<n; k++)
+            {
+               a[j][k]=a[j][k]-temp*a[i][k];
+            }
+         }
+      }
+   }
+   for(i=0; i<n; i++)
+   {
+      d=d*a[i][i];
+   }
+   printf("%d",(int)d);
+   return 0;
+}
