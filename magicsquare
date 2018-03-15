@@ -27,11 +27,7 @@ while(k<=end)
 }
 else
 {
-    while(a[i][j]!=0)
-    {
-    
     i=i+1;
-    }
     a[i][j]=k;
      k++;
 }
